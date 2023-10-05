@@ -1,16 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+
 /**
- * main - Entry point
+ * main - Entry point of the program
  *
- * Return: Always 1 (Success)
+ * Return: Always 1
  */
 int main(void)
 {
-	const char *text = "and that piece of art is useful\"\
-			    - Dora Korpar, 2015-10-19";
-	write(2, text, strlen(text));
+	write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
-
