@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
 *puts_half - puts half of a string
 *@str: string
@@ -6,7 +7,7 @@
 */
 void puts_half(char *str)
 {
-	int len = _strlen(str);
+	int len = strlen(str);
 
 	if (len % 2 == 0)
 		len = len / 2;
