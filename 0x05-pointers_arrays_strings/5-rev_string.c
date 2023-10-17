@@ -1,18 +1,58 @@
 #include "main.h"
-#include <string.h>
+
 /**
-* print_rev - prints a string in reverse
-* @s: string to print
-*/
-
-void print_rev(char *s)
+ * rev_string - Reverses a string
+ * @s: String to reverse
+ *
+ * Description: This function reverses the characters in a string.
+ * Return: Nothing
+ */
+void rev_string(char *s)
 {
-	int len = 0, index = 0;
+	int i = 0, len;
 
-	len = strlen(s);
+	len = _strlen(s) - 1;
 
-	for (index = len - 1; index >= 0; index--)
-		_putchar(s[index]);
+	while (len > i)
+	{
+		swap_char(s + len, s + i);
+		i++;
+		len--;
+	}
+}
 
-	_putchar('\n');
+/**
+ * _strlen - Returns the length of a string
+ * @s: String
+ *
+ * Description: This function calculates the length of a string.
+ * Return: Length of the string
+ */
+int _strlen(char *s)
+{
+	int count, inc;
+
+	inc = 0;
+
+	for (count = 0; s[count] != '\0'; count++)
+	{
+		inc++;
+	}
+
+	return (inc);
+}
+
+/**
+ * swap_char - Swaps two characters
+ * @a: First character
+ * @b: Second character
+ *
+ * Description: This function swaps the values of two characters.
+ * Return: Nothing
+ */
+void swap_char(char *a, char *b)
+{
+	char tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
