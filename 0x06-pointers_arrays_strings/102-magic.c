@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - checks smthg
- *
- * Return: void
- */
-
 int main(void)
 {
 	int n;
