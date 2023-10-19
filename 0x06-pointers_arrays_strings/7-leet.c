@@ -8,21 +8,21 @@
 
 char *leet(char *s)
 {
-	char *original = "aAeEoOtTlL";
-	char *leet_replacements = "44370171";
 	int i;
-	int j;
 
-	for (i = 0; s[i]; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; original[j]; j++)
-		{
-			if (s[i] == original[j])
-			{
-				s[i] = leet_replacements[j];
-				break;
-			}
-		}
+		while (s[i] == 'a' || s[i] == 'A')
+			s[i] = '4';
+		while (s[i] == 'e' || s[i] == 'E')
+			s[i] = '3';
+		while (s[i] == 'o' || s[i] == 'O')
+			s[i] = '0';
+		while (s[i] == 't' || s[i] == 'T')
+			s[i] = '7';
+		while (s[i] == 'l' || s[i] == 'L')
+			s[i] = '1';
 	}
+
 	return (s);
 }
