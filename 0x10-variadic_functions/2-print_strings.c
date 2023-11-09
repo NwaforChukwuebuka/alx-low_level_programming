@@ -33,6 +33,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (ptr == NULL)
 			ptr = "(nil)";
 
-		printf("%s%s\n", sep, ptr);
+		printf("%s%s", sep, ptr);
 	}
+
+	printf("\n");
+
+	va_end(args);
 }
