@@ -1,10 +1,10 @@
-#include "lists.h"
 #include <stdio.h>
 
 /**
  * pre_main -runs before main
  *
  */
+void pre_main(void) __attribute__((constructor));
 
 void pre_main(void)
 {
