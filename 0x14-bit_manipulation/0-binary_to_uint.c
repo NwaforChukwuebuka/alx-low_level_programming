@@ -12,7 +12,7 @@ unsigned int binary_to_uint(const char *b)
 	int i;
 	int base_two;
 
-	if(!b)
+	if (!b)
 		return (0);
 
 	uint = 0;
