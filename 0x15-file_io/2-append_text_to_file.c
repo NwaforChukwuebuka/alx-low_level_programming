@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stddef.h>
 #include <stdio.h>
 #include <sys/stat.h>
 #include <unistd.h>
@@ -26,7 +26,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (file == -1)
 		return (-1);
 
-	for (inlen = 0, ptr = text_content; *p; p++)
+	for (inlen = 0, p = text_content; *p; p++)
 		inlen++;
 	len = write(file, text_content, inlen);
 
