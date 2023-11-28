@@ -1,5 +1,12 @@
 #define _GNU_SOURCE
 #include "main.h"
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <stdio.h>
+
 /**
  * close_errchk - closes a file descriptor and prints
  * an error message if it fails
