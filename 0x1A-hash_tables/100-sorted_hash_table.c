@@ -41,7 +41,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 }
 
 /**
- * shash_table_set – Adds or updates an element to a sorted hash table.
+ * shash_table_set - Adds or updates an element to a sorted hash table.
  * @ht: A ptr to the sorted hash table.
  * @key: The key to add - cannot be an empty string.
  * @value: The value associated with key.
