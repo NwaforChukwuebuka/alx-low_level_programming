@@ -149,7 +149,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 		Node = Node->snext;
 
 	if (Node == NULL)
-		return (NULL)
+		return (NULL);
 	return (Node->value);
 
 }
@@ -183,7 +183,7 @@ void shash_table_print(const shash_table_t *ht)
  */
 void shash_table_print_rev(const shash_table_t *ht)
 {
-	shash_Node_t *Node;
+	shash_node_t *Node;
 
 	if (ht == NULL)
 		return;
@@ -207,7 +207,7 @@ void shash_table_print_rev(const shash_table_t *ht)
 void shash_table_delete(shash_table_t *ht)
 {
 	shash_table_t *h = ht;
-	shash_node_t *Node, *temp;
+	shash_node_t *ptr, *temp;
 
 	if (ht == NULL)
 		return;
