@@ -7,8 +7,7 @@
 
 /**
   * jump_search - Searches for a value in a sorted array
-  		  :using jump search algorithm
-  *               
+  * using jump search algorithm
   * @array: A ptr to the first element of the array.
   * @size: Total number of elements in the array.
   * @value: The value to search for.
