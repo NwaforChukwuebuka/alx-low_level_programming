@@ -1,4 +1,4 @@
-*
+/*
  * File: 100-jump.c
  * Auth: Nwafor Chukwuebuka
  */
